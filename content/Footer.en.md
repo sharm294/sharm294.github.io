@@ -1,9 +1,8 @@
 ---
-copyright: "Copyright © Start Bootstrap 2020"
+copyright: "Copyright © Varun Sharma 2021"
 social: {
-  twitter: "#",
-  facebook: "#",
-  medium: "#"
+  github: "sharm294",
+  linkedin: "varunsharma7",
 }
 privacyText: "Privacy Policy"
 privacyHref: "#!"
