@@ -56,7 +56,7 @@ export const query = graphql`
           }
           privacyHref
           privacyText
-          services {
+          skills {
             content
             header
             iconName

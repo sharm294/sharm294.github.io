@@ -36,13 +36,13 @@ exports.createSchemaCustomization = ({ actions }) => {
       jumpToAnchor: String
       jumpToAnchorText: String
       social: Social
-      services: [Service]
+      skills: [Skill]
       teamMember: [TeamMember]
     }`,
     `type TeamMember {
       social: Social
     }`,
-    `type Service {
+    `type Skill {
       iconName: String
       imageFileName: String
       header: String
