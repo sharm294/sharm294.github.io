@@ -5,7 +5,7 @@ import CircleFAButton from "components/CircleFAButton";
 import Image from "components/Image";
 import "./SkillItem.scss";
 
-const SkillItem = ({ iconName, imageFileName, header, content }) => {
+const SkillItem = ({ iconName, imageFileName, header, link, content }) => {
   let iconPart;
   if (iconName) {
     iconPart = <CircleFAButton iconName={iconName} />;
@@ -20,7 +20,11 @@ const SkillItem = ({ iconName, imageFileName, header, content }) => {
     <>
       {iconPart}
       {imagePart}
-      <h4 className="skill-item-heading">{header}</h4>
+      <h4 className="skill-item-heading">
+        <a href={link} >
+          {header}
+        </a>
+      </h4>
       <p className="text-muted">{content}</p>
     </>
   );
@@ -30,6 +34,7 @@ SkillItem.propTypes = {
   iconName: PropTypes.string,
   imageFileName: PropTypes.string,
   header: PropTypes.string,
+  link: PropTypes.string,
   content: PropTypes.string,
 };
 
@@ -37,6 +42,7 @@ SkillItem.defaultProps = {
   iconName: null,
   imageFileName: null,
   header: "",
+  link: "",
   content: "",
 };
 

@@ -59,6 +59,7 @@ export const query = graphql`
           skills {
             content
             header
+            link
             iconName
             imageFileName
           }

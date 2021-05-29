@@ -19,7 +19,7 @@ const Skills = ({ className, frontmatter }) => {
       <Row>
         <SectionHeader header={rootHeader} subheader={rootSubHeader} />
       </Row>
-      <Row className="text-center">
+      <Row className="text-justify-left">
         {skills.map((skill) => (
           <Col md={4} key={skill.header}>
             <SkillItem {...skill} />
