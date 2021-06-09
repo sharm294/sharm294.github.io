@@ -14,6 +14,7 @@ const TimelineItem = ({
   header,
   subheader,
   content,
+  link,
 }) => {
   const headerPart = header ? <h4>{header}</h4> : null;
   const subheaderPart = subheader ? <h4 className="subheading">{subheader}</h4> : null;
@@ -24,11 +25,13 @@ const TimelineItem = ({
     <li className={liClassName}>
       <div className="timeline-image">
         {imageContent || (
-          <Image
-            className="rounded-circle img-fluid"
-            fileName={imageFileName}
-            alt={imageAlt || header || subheader}
-          />
+          <a href={link} target="_blank" rel="noopener noreferrer">
+            <Image
+              className="rounded-circle img-fluid"
+              fileName={imageFileName}
+              alt={imageAlt || header || subheader}
+            />
+          </a>
         )}
       </div>
       <div className="timeline-panel">
@@ -52,6 +55,7 @@ TimelineItem.propTypes = {
   header: PropTypes.string,
   subheader: PropTypes.string,
   content: PropTypes.string,
+  link: PropTypes.string,
 };
 
 TimelineItem.defaultProps = {
@@ -62,6 +66,7 @@ TimelineItem.defaultProps = {
   header: "",
   subheader: "",
   content: "",
+  link: "",
 };
 
 export default TimelineItem;

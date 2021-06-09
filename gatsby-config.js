@@ -1,5 +1,5 @@
 const path = require("path");
-const { title, keywords, description, author, defaultLang, trackingId } = require("./config/site");
+const { title, keywords, description, author, defaultLang } = require("./config/site");
 
 module.exports = {
   siteMetadata: {
@@ -9,12 +9,6 @@ module.exports = {
     author,
   },
   plugins: [
-    {
-      resolve: "gatsby-plugin-google-analytics",
-      options: {
-        trackingId,
-      },
-    },
     {
       resolve: "gatsby-plugin-manifest",
       options: {
@@ -91,6 +85,14 @@ module.exports = {
         useLangKeyLayout: false,
         pagesPaths: ["/content/"],
       },
+    },
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /\.svg$/
+        }
+      }
     },
   ],
 };

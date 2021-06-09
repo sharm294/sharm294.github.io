@@ -1,0 +1,48 @@
+.icon {
+    stroke: rgb(255, 255, 255);
+    fill: none;
+    width: 70%;
+    height: auto;
+}
+
+.fpga {
+    @extend .icon;
+    stroke-width: 3;
+}
+
+.backend {
+    @extend .icon;
+    stroke-width: 15;
+}
+
+.frontend {
+    @extend .icon;
+    stroke-width: 4;
+}
+
+.devops {
+    @extend .icon;
+    fill: rgb(255, 255, 255);
+}
+
+.cpu {
+    @extend .icon;
+    width: 60%;
+    .trace {
+        stroke-width: 15;
+    }
+}
+
+.laptop {
+    @extend .icon;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+    .touchpad {
+        fill: rgb(255, 255, 255);
+        stroke-width:0.5;
+        
+    }
+    .rest {
+        stroke-width:2;
+    }
+}

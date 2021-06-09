@@ -34,14 +34,8 @@ export const query = graphql`
         frontmatter {
           brand
           anchor
-          clients {
-            href
-            imageFileName
-          }
-          content
           copyright
           header
-          email
           imageFileName
           jumpToAnchor
           jumpToAnchorText
@@ -51,15 +45,12 @@ export const query = graphql`
             extraInfo
             header
             subheader
-            imageFileNameDetail
+            link
             imageFileName
           }
-          privacyHref
-          privacyText
           skills {
             content
             header
-            link
             iconName
             imageFileName
           }
@@ -71,21 +62,6 @@ export const query = graphql`
             twitter
           }
           subheader
-          teamMember {
-            header
-            imageFileName
-            social {
-              facebook
-              github
-              linkedin
-              medium
-              twitter
-            }
-            subheader
-          }
-          telephone
-          termsHref
-          termsText
           title
           timeline {
             content
@@ -93,6 +69,7 @@ export const query = graphql`
             imageContent
             imageFileName
             subheader
+            link
           }
         }
         fields {
@@ -123,7 +100,7 @@ const IndexPage = ({ data, pageContext: { langKey, defaultLang, langTextMap } })
 
   return (
     <>
-      <SEO lang={langKey} title="Top" keywords={keywords} description={description} />
+      <SEO lang={langKey} keywords={keywords} description={description} />
       <Navbar
         anchors={anchors}
         frontmatter={navBarNode.frontmatter}

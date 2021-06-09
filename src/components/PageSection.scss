@@ -1,8 +1,10 @@
 .page-section {
-  padding: 100px 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 @media (min-width: 768px) {
   .page-section {
-    padding: 150px 0;
+    padding-top: 75px;
+    padding-bottom: 75px;
   }
 }
