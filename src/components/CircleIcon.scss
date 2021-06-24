@@ -10,11 +10,22 @@
   color: white;
   border-radius: 100%;
   outline: none;
-  background-color: $gray-900;
-  &:active,
-  &:focus,
-  &:hover {
-    background-color: $primary;
-    color: white;
+  body.light & {
+    background-color: $dark;
+    &:active,
+    &:focus,
+    &:hover {
+      background-color: $primary;
+      color: white;
+    }
+  }
+  body.dark & {
+    background-color: $gray-100;
+    &:active,
+    &:focus,
+    &:hover {
+      background-color: $primary;
+      color: white;
+    }
   }
 }

@@ -48,7 +48,7 @@ const ProjectItem = ({
         </a>
         <div className="portfolio-caption">
           <h4>{header}</h4>
-          {subheader ? <p className="text-muted">{subheader}</p> : null}
+          {subheader ? <p>{subheader}</p> : null}
         </div>
       </Col>
       <ProjectDetailDialog

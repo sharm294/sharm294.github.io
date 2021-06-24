@@ -1,0 +1,78 @@
+$width: 50px;
+$height: 30px;
+$ball_radius: 24px;
+$toggle_offset: 20px - ($height / 2); // 20px is midpoint (icons are 40px)
+$ball_offset: ($height - $ball_radius)/2;
+
+.switch {
+  position: relative;
+  display: inline-block;
+  top: $toggle_offset;
+  width: $width;
+  height: $height;
+  outline: none;
+  input {
+    position: absolute;
+    display: none;
+    top: -99999px;
+    left: -99999px;
+    &:checked + .slider {
+      background-color: $primary;
+    }
+    &:checked + .slider:before {
+      -webkit-transform: translateX($width - (2*$ball_offset) - $ball_radius);
+      -ms-transform: translateX($width - (2*$ball_offset) - $ball_radius);
+      transform: translateX($width - (2*$ball_offset) - $ball_radius);
+    }
+    &:focus + .slider {
+      box-shadow: 0 0 1px $primary;
+    }
+  }
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $gray-100;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: $height;
+    &:before {
+      position: absolute;
+      content: "";
+      height: $ball_radius;
+      width: $ball_radius;
+      left: $ball_offset;
+      bottom: $ball_offset;
+      background-color: $light;
+      -webkit-transition: .4s;
+      transition: .4s;
+      border-radius: 50%;
+    }
+  }
+}
+
+.root {
+  svg {
+    body.light & {
+      color: $dark;
+    }
+    body.dark & {
+      color: $gray-100;
+    }
+  }
+}
+
+.sun {
+  position: relative;
+  top: -10px;
+  left: -5px;
+}
+
+.moon {
+  position: relative;
+  top: -10px;
+  right: -5px;
+}

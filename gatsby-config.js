@@ -68,8 +68,8 @@ module.exports = {
             file: "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap",
           },
           {
-            name: "Kaushan Script",
-            file: "https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap",
+            name: "Merienda One",
+            file: "https://fonts.googleapis.com/css2?family=Merienda+One&display=swap",
           },
           {
             name: "Roboto Slab",
@@ -94,5 +94,6 @@ module.exports = {
         }
       }
     },
+    "gatsby-plugin-dark-mode"
   ],
 };

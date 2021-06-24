@@ -1,0 +1,8 @@
+svg {
+  body.light & {
+    color: $light;
+  }
+  body.dark & {
+    color: $dark;
+  }
+}

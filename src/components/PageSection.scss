@@ -8,3 +8,19 @@
     padding-bottom: 75px;
   }
 }
+.light {
+  .page-section-odd{
+    background-color: $light-offset;
+  }
+  .page-section-even{
+    background-color: $light;
+  }
+}
+.dark {
+  .page-section-odd{
+    background-color: $dark-offset;
+  }
+  .page-section-even{
+    background-color: $dark;
+  }
+}

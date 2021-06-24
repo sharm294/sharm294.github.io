@@ -17,7 +17,7 @@ const Contact = ({ className, frontmatter }) => {
       <Row className="justify-content-center">
         <Col lg={8} className="text-center">
           <SectionHeader header={header} subheader="" />
-          <p className="text-muted mb-5">{subheader}</p>
+          <p >{subheader}</p>
         </Col>
       </Row>
     </PageSection>

@@ -1,5 +1,10 @@
 .icon {
-    stroke: rgb(255, 255, 255);
+    body.light & {
+        stroke: $light;
+    }
+    body.dark & {
+        stroke: $dark;
+    }
     fill: none;
     width: 70%;
     height: auto;
@@ -22,7 +27,12 @@
 
 .devops {
     @extend .icon;
-    fill: rgb(255, 255, 255);
+    body.light & {
+        fill: $light;
+    }
+    body.dark & {
+        fill: $dark;
+    }
 }
 
 .cpu {
@@ -38,7 +48,12 @@
     stroke-linecap:round;
     stroke-linejoin:round;
     .touchpad {
-        fill: rgb(255, 255, 255);
+        body.light & {
+            fill: $light;
+        }
+        body.dark & {
+            fill: $dark;
+        }
         stroke-width:0.5;
         
     }

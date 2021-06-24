@@ -1,5 +1,6 @@
-import makeFAIcon from "utils/makeFAIcon";
-
+// import makeFAIcon from "utils/makeFAIcon";
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faPhone,
   faEnvelope,
@@ -15,6 +16,13 @@ import {
   faGithubAlt,
   faMediumM,
 } from "@fortawesome/free-brands-svg-icons";
+
+import "./SystemIcons.scss"
+
+function makeFAIcon(icon) {
+  // eslint-disable-next-line react/display-name
+  return (props) => <FontAwesomeIcon icon={icon} {...props} />;
+}
 
 export const PhoneIcon = makeFAIcon(faPhone);
 export const EnvelopIcon = makeFAIcon(faEnvelope);

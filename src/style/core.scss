@@ -4,10 +4,9 @@
     "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     "Noto Color Emoji";
 }
-@mixin script-font {
-  font-family: "Kaushan Script", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
-    "Noto Color Emoji";
+@mixin title-font {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 @mixin body-font {
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -21,17 +20,22 @@
 
 /* Variables */
 // Restated Bootstrap Variables
-$white: #fff !default;
-$gray-100: #f8f9fa !default;
-$gray-200: #e9ecef !default;
-$gray-300: #dee2e6 !default;
-$gray-400: #ced4da !default;
-$gray-500: #adb5bd !default;
-$gray-600: #868e96 !default;
-$gray-700: #495057 !default;
-$gray-800: #343a40 !default;
-$gray-900: #212529 !default;
-$black: #000 !default;
+$white: #ffffff !default;
+$light: #ffffff !default;
+$light-offset: #fafafa !default;
+$gray-50: #e3e3e3 !default;
+$gray-100: #b8b8b8 !default;
+$gray-200: #898989 !default;
+$gray-300: #595959 !default;
+$gray-400: #363636 !default;
+$gray-500: #121212 !default;
+$gray-600: #101010 !default;
+$gray-700: #0d0d0d !default;
+$gray-800: #0a0a0a !default;
+$gray-900: #050505 !default;
+$dark-offset: #161616 !default;
+$dark: #121212 !default;
+$black: #000000 !default;
 
 $primary: #fed136 !default;
 

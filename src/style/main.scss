@@ -5,6 +5,18 @@
 body {
   overflow-x: hidden;
   @include body-font;
+  &.light {
+    color: $dark;
+    hr {
+      border-top-color: $gray-50;
+    }
+  }
+  &.dark {
+    color: $gray-100;
+    hr {
+      border-top-color: $gray-400;
+    }
+  }
 }
 
 p {

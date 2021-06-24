@@ -116,7 +116,7 @@ const IndexPage = ({ data, pageContext: { langKey, defaultLang, langTextMap } })
           return SectionComponent ? (
             <SectionComponent
               key={sectionComponentName}
-              className={ind % 2 === 1 ? "bg-light" : null}
+              className={ind % 2 === 1 ? "page-section-odd" : "page-section-even"}
               frontmatter={frontmatter}
             />
           ) : null;
